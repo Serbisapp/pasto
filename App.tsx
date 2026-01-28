@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import CustomCursor from './components/CustomCursor';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Marquee from './components/Marquee';
-import Product3DCard from './components/Product3DCard';
-import Manifesto from './components/Manifesto';
-import { Product } from './types';
+import CustomCursor from './components/CustomCursor.tsx';
+import Navigation from './components/Navigation.tsx';
+import Hero from './components/Hero.tsx';
+import Marquee from './components/Marquee.tsx';
+import Product3DCard from './components/Product3DCard.tsx';
+import Manifesto from './components/Manifesto.tsx';
+import { Product } from './types.ts';
 
 // Only Drop 1 Product
 const PRODUCTS: Product[] = [

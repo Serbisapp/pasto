@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Product } from '../types';
+import { Product } from '../types.ts';
 
 interface Props {
   product: Product;

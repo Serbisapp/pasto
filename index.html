@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PASTO /// MUNDIAL</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23ccff00%22/></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Babel Standalone for in-browser compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <style>
       :root {
         --color-acid: #ccff00;
@@ -95,9 +100,9 @@
     "react-dom/": "https://esm.sh/react-dom@18.2.0/",
     "framer-motion": "https://esm.sh/framer-motion@11.0.8?external=react,react-dom",
     "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
     "three": "https://esm.sh/three@^0.182.0",
-    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0"
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7"
   }
 }
 </script>
@@ -105,5 +110,7 @@
   <body>
     <div id="root"></div>
     <div class="noise"></div>
+    <!-- Entry Point for Babel Standalone -->
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="./index.tsx"></script>
   </body>
 </html>
